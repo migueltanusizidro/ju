@@ -1,0 +1,101 @@
+/* soft reset do css */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(https://imagens.ebc.com.br/5PW0Ks5vyfgazEqgyIrFChJ1kAw=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/stsci-h-p2016a-m-2000x1374.png?itok=_0kA63O8);
+    background-size:1350px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 13px;}
+    /*se a tela tiver pelo menos 400px vai carregar esse estilos*/
+    @media (min-width: 474px) {
+      body {
+        font-size: 16px;
+      }
+
+    } 
+    header{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    }
+  .menu li{
+    list-style: none;}
+  .menu ul {
+    display: flex;
+    justify-content: space-around;}
+    .menu a {
+      display: block;
+      padding: 10px 20px;
+
+    }
+  a{
+    text-decoration:none;
+    color:red;}
+  a:hover{
+    text-decoration:underline;
+  color:beige;} 
+  .site-title{
+    text-align:center;
+    font-family:Algerian;
+    color:beige;}
+    .site-title {
+    font-size: 4em;
+    font-family: 'Balsamiq Sans', cursive;
+}
+  .site-subtitle{
+    text-align:center;
+    color:beige;
+    font-family: 'Lemonada', cursive;
+    line-height: 2em;}
+    .Portfólio h2 {
+      font-family: 'Press Start 2P', cursive;
+      color: red;
+      margin-bottom: 1em;
+      font-size: 1.5em;
+    }
+   .img-portfolio{
+     height: 180px;
+     width: 250px;
+     object-position: top;
+     border-radius: 100px;
+   }
+   .Portfólio {
+     padding: 2em;
+     height: 100vh;
+   }
+   .Portfólio .grid {
+     display: grid;
+     gap: 1em;
+   }
+   @media (min-width: 565px){
+    .Portfólio .grid {
+      grid-template-columns: repeat(2, 350px);
+    }
+   }
+   @media (min-width: 880px){
+    .Portfólio .grid {
+      grid-template-columns: repeat(2, 350px);
+      justify-content: center;
+      align-content: flex-end;
+      height: 100vh;
+      
+    }
+   }
+   .Portfólio figure {
+     text-align: center;
+     color: navajowhite;
+     font-family: 'Cinzel Decorative', cursive;
+     font-size: 20px; 
+   }
+  
